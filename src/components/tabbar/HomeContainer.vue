@@ -54,6 +54,7 @@
     methods: {
       getImgLunbotu() {
         //暂未获取轮播图数据
+        //s
       },
     }
   }
