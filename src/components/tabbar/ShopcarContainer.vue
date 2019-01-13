@@ -2,7 +2,6 @@
   <div>
     <h3>ShopcarContainer</h3>
   </div>
-
   
 </template>
 

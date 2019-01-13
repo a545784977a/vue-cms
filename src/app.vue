@@ -8,7 +8,7 @@
     <transition>
       <router-view></router-view>
     </transition>
-
+  
     <!-- 底部 Tabbar 区域 -->
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item" to="/home">

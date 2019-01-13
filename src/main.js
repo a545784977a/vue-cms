@@ -4,7 +4,7 @@ import Vue from 'vue';
 //导入路由的包
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);//安装路由
-
+ 
 //导入vue-resource
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
