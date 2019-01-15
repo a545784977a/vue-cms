@@ -32,7 +32,11 @@
 <script>
   export default {
     data () {
-      return {}
+      return {
+        pageIndex: 1,
+        comments: [],
+        msg: ''
+      }
     },
     methods: {
       getComments () {

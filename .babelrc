@@ -1,7 +1,8 @@
 {
   "plugins": [
     "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    "transform-remove-strict-mode",
   ],
   "presets": [
     [
@@ -10,5 +11,6 @@
         "useBuiltIns": "entry"
       }
     ]
-  ]
+  ],
+  "ignore": ["./src/lib/mui/js/mui.min.js"]
 }

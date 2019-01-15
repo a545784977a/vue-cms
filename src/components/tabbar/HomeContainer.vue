@@ -2,24 +2,24 @@
   <div>
     <!-- 轮播图(未装数据) -->
     <mt-swipe :auto="4000">
-      <mt-swipe-item>1</mt-swipe-item>
-      <mt-swipe-item>2</mt-swipe-item>
-      <mt-swipe-item>3</mt-swipe-item>
+      <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
+        <img :src="item.img" alt="">
+      </mt-swipe-item>
     </mt-swipe>
 
     <!-- 六宫格 -->
     <ul class="mui-table-view mui-grid-view mui-grid-9">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <router-link to="/home/newsList">
+        <router-link to="/home/newslist">
           <img src="../../images/menu1.png" alt="">
           <div class="mui-media-body">新闻资讯</div>
         </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
-        <a href="#">
+        <router-link to="/home/photolist">
           <img src="../../images/menu2.png" alt="">
           <div class="mui-media-body">图片分享</div>
-        </a>
+        </router-link>
       </li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
         <a href="#">
@@ -51,10 +51,25 @@
 
 <script>
   export default {
+    data () {
+      return {
+        lunbotuList: []
+      }
+    },
+    created () {
+      this.getImgLunbotu();
+    },
     methods: {
-      getImgLunbotu() {
-        //暂未获取轮播图数据
-        //s
+      getImgLunbotu() { // 获取轮播图数据方法
+        this.$http.get('api/getlunbo').then(result => {
+          if (result.body.status === 0) {
+            // 获取成功
+            this.lunbotuList = result.body.message;
+          } else {
+            // 获取失败
+            Toast('加载轮播图失败...');
+          }
+        });
       },
     }
   }
@@ -73,6 +88,11 @@
       }
       &:nth-child(3) {
         background: pink;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
