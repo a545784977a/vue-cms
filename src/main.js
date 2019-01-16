@@ -18,6 +18,8 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource);
 // 设置请求的根路径
 Vue.http.options.root = 'http://www.liulongbin.top:3005'
+// 全局设置 post 时候表单数据组织格式
+Vue.http.options.emulateJSON = true
 
 // 导入MUI样式
 import './lib/mui/css/mui.min.css'
@@ -31,6 +33,10 @@ import router from './router.js'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 Vue.use(MintUI);
+
+// Vue preview plugin
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
 
 
 // 导入app组件

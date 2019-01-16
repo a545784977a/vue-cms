@@ -14,11 +14,12 @@
     <div class="content" v-html="newsInfo.content"></div>
 
     <!-- 评论子组件区域 -->
-    <comment-box></comment-box>
+    <comment-box :id="this.id"></comment-box>
   </div>
 </template>
 
 <script>
+  import { Toast } from 'mint-ui';
   // 导入评论子组件
   import comment from '../subcomponents/comment.vue'
 
@@ -26,7 +27,7 @@
     data () {
       return {
         id: this.$route.params.id,
-        newsInfo: []
+        newsInfo: {}
       }
     },
     created () {
@@ -39,8 +40,8 @@
           if (result.body.status === 0) {
             this.newsInfo = result.body.message[0];
           } else {
-            console.log('newsList 获取失败')
-            console.log(this.id)
+            Toast('新闻内容获取失败...')
+            console.log('失败id' + this.id)
           }
         });
       },
