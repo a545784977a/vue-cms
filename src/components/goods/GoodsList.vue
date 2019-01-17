@@ -1,56 +1,69 @@
 <template>
   <div class="goods-list">
 
-    <div class="goods-item">
-      <img src="http://demo.dtcms.net/upload/201504/18/thumb_201504181230434303.jpg" alt="">
-      <h1 class="title">卡时间电话卡技术</h1>
+    <!-- 使用编程式导航 -->
+    <div class="goods-item" v-for="item in goodsList" :key="item.id" @click="goDetail(item.id)">
+      <img :src="item.img_url" alt="">
+      <h1 class="title">{{ item.title }}</h1>
       <div class="info">
         <p class="price">
-          <span class="now">8888</span>
-          <span class="old">8888</span>
+          <span class="now">{{ item.sell_price }}</span>
+          <span class="old">{{ item.market_price }}</span>
         </p>
         <p class="sell">
           <span>热卖中</span>
-          <span>剩60件</span>
+          <span>剩{{ item.stock_quantity }}件</span>
         </p>
       </div>
     </div>
 
-    <div class="goods-item">
-      <img src="http://demo.dtcms.net/upload/201504/18/thumb_201504181230434303.jpg" alt="">
-      <h1 class="title">卡时间电话卡技术</h1>
-      <div class="info">
-        <p class="price">
-          <span class="now">8888</span>
-          <span class="old">8888</span>
-        </p>
-        <p class="sell">
-          <span>热卖中</span>
-          <span>剩60件</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="goods-item">
-      <img src="http://demo.dtcms.net/upload/201504/18/thumb_201504181230434303.jpg" alt="">
-      <h1 class="title">卡时间电话卡技术</h1>
-      <div class="info">
-        <p class="price">
-          <span class="now">8888</span>
-          <span class="old">8888</span>
-        </p>
-        <p class="sell">
-          <span>热卖中</span>
-          <span>剩60件</span>
-        </p>
-      </div>
-    </div>
+    <mt-button type="danger" size="large" @click="getMore">加载更多</mt-button>
 
   </div>
 </template>
 
 <script>
-  
+  export default {
+    data () {
+      return {
+        pageindex: 1,
+        goodsList: []
+      }
+    },
+
+    created () {
+      this.getGoodsList()
+    },
+
+    methods: {
+      getGoodsList () {
+        this.$http.get('api/getgoods?pageindex=' + this.pageindex).then(result => {
+          if (result.body.status === 0) {
+            // this.goodsList = result.body.message;
+            this.goodsList = this.goodsList.concat(result.body.message);
+          } else {
+            console.log('商品列表获取失败...')
+          }
+        })
+      },
+
+      getMore () {
+        this.pageindex ++;
+        this.getGoodsList();
+      },
+
+      goDetail (id) {
+        // 编程式导航,方式 1
+        // this.$router.push('/home/goodsinfo/' + id);
+        // 方式2
+        // this.$router.push({path: '/home/goodsinfo/' + id});
+        // 方式3
+        this.$router.push({name: 'goodsinfo', params: { id }});
+        // 方式4 变成 /home/goodslist?id=id
+        // this.$router.push({path: '/home/goodsinfo', query: {id}});
+      }
+    },
+  }
 </script>
 
 <style lang="scss" scoped>
