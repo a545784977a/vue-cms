@@ -5,7 +5,7 @@
     <mt-swipe :auto="4000">
       <!-- 使用此轮播图组件,需传递轮播图 list -->
       <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
-        <img :src="item.img" alt="" :class="{'full': isfull}">
+        <img :src="item.img" alt="" :class="{'full': isFull}">
       </mt-swipe-item>
     </mt-swipe>
 
@@ -14,7 +14,7 @@
 
 <script>
   export default {
-    props: ["lunbotuList", "isfull"]
+    props: ["lunbotuList", "isFull"]
   }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 轮播图组件 -->
-    <switer :lunbotuList="lunbotuList" :idFull="true"></switer>
+    <switer :lunbotuList="lunbotuList" :isFull="true"></switer>
 
     <!-- 六宫格 -->
     <ul class="mui-table-view mui-grid-view mui-grid-9">
