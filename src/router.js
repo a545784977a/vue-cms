@@ -15,7 +15,7 @@ import GoodsDesc from './components/goods/GoodsDesc.vue'
 import GoodsComment from './components/goods/GoodsComment.vue'
 
 var router = new VueRouter({
-  routes: [ //路由配置规则
+  routes: [
     { path: '/', redirect: '/home' },
     { path: '/home', component: HomeContainer },
     { path: '/member', component: MemberContainer },
@@ -33,5 +33,4 @@ var router = new VueRouter({
   linkActiveClass: 'mui-active', //覆盖默认的类
 })
 
-//把对象暴露出去
 export default router
