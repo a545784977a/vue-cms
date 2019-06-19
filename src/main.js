@@ -1,11 +1,8 @@
-// 入口文件
 import Vue from 'vue'
 
-// 导入路由的包
 import VueRouter from 'vue-router'
-Vue.use(VueRouter);// 安装路由
+Vue.use(VueRouter);
 
-// veux
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
@@ -37,7 +34,7 @@ var store = new Vuex.Store({
       localStorage.setItem('car', JSON.stringify(state.car))
     },
 
-    updateGoodsInfo (state, goodsinfo) { // 更新购物车中的商品数量
+    updateGoodsInfo (state, goodsinfo) {
       state.car.some(item => {
         if (item.id === goodsinfo.id) {
           item.count = parseInt(goodsinfo.count)
@@ -49,7 +46,7 @@ var store = new Vuex.Store({
       localStorage.setItem('car', JSON.stringify(state.car))
     },
 
-    removeFromCar (state, id) { // 根据 id 从 store 中删除数据
+    removeFromCar (state, id) {
       state.car.some((item, i) => {
         if (item.id == id) {
           state.car.splice(i, 1)
@@ -119,7 +116,6 @@ var store = new Vuex.Store({
 
 import moment from 'moment'
 
-// 定义全局过滤器
 Vue.filter('dateFormat', function(dataStr, pattern = 'YYYY-MM-DD hh:mm:ss') {
   return moment(dataStr).format(pattern)
 });

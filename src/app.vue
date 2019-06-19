@@ -1,18 +1,15 @@
 <template>
   <div class="app-container">
-    <!-- 顶部 Header 区域 -->
     <mt-header fixed title="Vue项目">
       <span slot="left" @click="goBack" v-show="flag">
         <mt-button icon="back">返回</mt-button>
       </span>
     </mt-header>
 
-    <!-- 中间 路由 router-view 区域 -->
     <transition>
       <router-view></router-view>
     </transition>
 
-    <!-- 底部 Tabbar 区域 -->
     <nav class="mui-bar mui-bar-tab">
       <router-link class="mui-tab-item-lq" to="/home">
         <span class="mui-icon mui-icon-home"></span>
