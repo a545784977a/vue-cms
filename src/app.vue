@@ -47,7 +47,7 @@
     },
 
     methods: {
-      goBack () { // 点击按钮后退
+      goBack () {
         this.$router.go(-1)
       }
     },
