@@ -69,12 +69,10 @@
         selectedCount: 1,
       }
     },
-
     created () {
       this.getLunbotu();
       this.getGoodsInfo();
     },
-
     methods: {
       getLunbotu () {
         this.$http.get('api/getthumimages/' + this.id).then(result => {
@@ -88,7 +86,6 @@
           }
         });
       },
-
       getGoodsInfo () {
         this.$http.get('api/goods/getinfo/' + this.id).then(result => {
           if (result.body.status === 0) {
@@ -98,15 +95,12 @@
           }
         })
       },
-
       goDesc (id) {
         this.$router.push('/home/goodsdesc/' + id);
       },
-
       goComment (id) {
         this.$router.push('/home/goodscomment/' + id);
       },
-
       addToShopCar () { // 添加到购物车
         this.ballFlag = !this.ballFlag;
 
@@ -120,11 +114,9 @@
         this.$store.commit('addToCar', goodsinfo)
 
       },
-
       beforeEnter (el) {
         el.style.transform = "translate(0, 0)"
       },
-
       enter (el, done) {
         el.offsetWidth;
 
@@ -140,16 +132,13 @@
         el.style.transition = 'all 0.5s cubic-bezier(.4,-0.3,1,.68)'
         done()
       },
-
       afterEnter (el) {
         this.ballFlag = !this.ballFlag
       },
-
       getSelectedCount (count) {
         this.selectedCount = count;
         // console.log(this.selectedCount)
       }
-
     },
 
     components: {

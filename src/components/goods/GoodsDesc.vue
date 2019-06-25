@@ -16,11 +16,9 @@
         id: this.$route.params.id,
       }
     },
-
     created () {
       this.getGoodsDesc();
     },
-
     methods: {
       getGoodsDesc () {
         this.$http.get('api/goods/getdesc/' + this.id).then(result => {

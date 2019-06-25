@@ -1,7 +1,5 @@
 <template>
-
   <cmtbox :id="$route.params.id"></cmtbox>
-
 </template>
 
 <script>
