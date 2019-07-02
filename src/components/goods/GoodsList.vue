@@ -1,7 +1,6 @@
 <template>
   <div class="goods-list">
 
-    <!-- 使用编程式导航 -->
     <div class="goods-item" v-for="item in goodsList" :key="item.id" @click="goDetail(item.id)">
       <img :src="item.img_url" alt="">
       <h1 class="title">{{ item.title }}</h1>
@@ -18,7 +17,6 @@
     </div>
 
     <mt-button type="danger" size="large" @click="getMore">加载更多</mt-button>
-
   </div>
 </template>
 
@@ -39,7 +37,6 @@
       getGoodsList () {
         this.$http.get('api/getgoods?pageindex=' + this.pageindex).then(result => {
           if (result.body.status === 0) {
-            // this.goodsList = result.body.message;
             this.goodsList = this.goodsList.concat(result.body.message);
           } else {
             console.log('商品列表获取失败...')

@@ -140,7 +140,7 @@
         // console.log(this.selectedCount)
       }
     },
-
+    
     components: {
       swiper,
       numbox
