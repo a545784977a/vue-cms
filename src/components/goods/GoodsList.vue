@@ -50,14 +50,7 @@
       },
 
       goDetail (id) {
-        // 编程式导航,方式 1
-        // this.$router.push('/home/goodsinfo/' + id);
-        // 方式2
-        // this.$router.push({path: '/home/goodsinfo/' + id});
-        // 方式3
         this.$router.push({name: 'goodsinfo', params: { id }});
-        // 方式4 变成 /home/goodslist?id=id
-        // this.$router.push({path: '/home/goodsinfo', query: {id}});
       }
     },
   }

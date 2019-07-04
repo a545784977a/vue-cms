@@ -30,7 +30,6 @@
     },
     methods: {
       getNewsInfo () {
-        // 获取新闻内容详情
         this.$http.get('api/getnew/' + this.id).then(result => {
           if (result.body.status === 0) {
             this.newsInfo = result.body.message[0];
@@ -63,10 +62,6 @@
       color: blue;
       display: flex;
       justify-content: space-between;
-    }
-
-    .content {
-
     }
   }
 </style>
