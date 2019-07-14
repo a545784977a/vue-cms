@@ -49,7 +49,6 @@
           }
         });
       },
-      // 加载更多评论
       getMore () {
         this.pageIndex++;
         this.getComments();

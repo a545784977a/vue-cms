@@ -30,7 +30,7 @@ var router = new VueRouter({
     { path: '/home/goodsdesc/:id', component: GoodsDesc },
     { path: '/home/goodscomment/:id', component: GoodsComment },
   ],
-  linkActiveClass: 'mui-active', //覆盖默认的类
+  linkActiveClass: 'mui-active'
 })
 
 export default router

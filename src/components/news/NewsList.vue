@@ -32,7 +32,6 @@
     },
     methods: {
       getNewsList () {
-        // 获取新闻列表数据
         this.$http.get('api/getnewslist').then(result => {
           if (result.body.status === 0) {
             this.newsList = result.body.message;
