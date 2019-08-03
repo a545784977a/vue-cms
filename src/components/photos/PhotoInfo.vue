@@ -13,7 +13,6 @@
     <!-- 图片内容区域 -->
     <div class="content" v-html="photoInfo.content"></div>
 
-    <!-- 评论区域 -->
     <cmt-box :id="id"></cmt-box>
 
   </div>

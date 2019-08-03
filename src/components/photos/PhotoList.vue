@@ -11,7 +11,6 @@
         </div>
       </div>
 
-      <!-- 图片列表区域 -->
       <ul class="photo-list">
         <router-link v-for="item in list" :key="item.id" :to="'/home/photoinfo/' + item.id" tag="li">
           <img v-lazy="item.img_url">
@@ -27,7 +26,6 @@
 
 <script>
   import { Toast } from 'mint-ui';
-  // 导入 mui 包
   import mui from '../../lib/mui/js/mui.min.js'
 
   export default {

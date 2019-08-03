@@ -37,11 +37,9 @@
     },
 
     methods: {
-      // 获取评论信息
       getComments () {
         this.$http.get("api/getcomments/"+ this.id +"?pageindex=" + this.pageIndex).then(result => {
           if (result.body.status === 0) {
-            // this.comments = result.body.message;
             this.comments = this.comments.concat(result.body.message);
           } else {
             Toast('评论获取失败...')
