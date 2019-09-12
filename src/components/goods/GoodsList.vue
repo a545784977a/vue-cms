@@ -1,6 +1,5 @@
 <template>
   <div class="goods-list">
-
     <div class="goods-item" v-for="item in goodsList" :key="item.id" @click="goDetail(item.id)">
       <img :src="item.img_url" alt="">
       <h1 class="title">{{ item.title }}</h1>
@@ -15,7 +14,6 @@
         </p>
       </div>
     </div>
-
     <mt-button type="danger" size="large" @click="getMore">加载更多</mt-button>
   </div>
 </template>

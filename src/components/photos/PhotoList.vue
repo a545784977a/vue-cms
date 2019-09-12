@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- 顶部滑动条区域 -->
     <div id="slider" class="mui-slider">
         <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
           <div class="mui-scroll">
@@ -20,7 +19,6 @@
           </div>
         </router-link>
       </ul>
-
     </div>
 </template>
 
