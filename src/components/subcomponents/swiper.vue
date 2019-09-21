@@ -1,5 +1,4 @@
 <template>
-  <!-- 轮播图子组件 -->
   <div>
 
     <mt-swipe :auto="4000">

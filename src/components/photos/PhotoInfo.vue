@@ -1,16 +1,13 @@
 <template>
   <div class="photoinfo-container">
-    <!-- 标题区域 -->
     <h3>{{ photoInfo.title }}</h3>
     <p class="subtitle">
       <span>发表时间:{{ photoInfo.add_time | dateFormat }}</span>
       <span>点击:{{ photoInfo.click }}次</span>
     </p>
 
-    <!-- 缩略图区域 -->
       <vue-preview :slides="slide1" @close="handleClose"></vue-preview>
 
-    <!-- 图片内容区域 -->
     <div class="content" v-html="photoInfo.content"></div>
 
     <cmt-box :id="id"></cmt-box>
