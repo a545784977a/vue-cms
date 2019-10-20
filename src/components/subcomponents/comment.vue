@@ -42,7 +42,7 @@
           if (result.body.status === 0) {
             this.comments = this.comments.concat(result.body.message);
           } else {
-            Toast('评论获取失败...')
+            Toast('评论获取失败')
             console.log('失败id' + this.id)
           }
         });

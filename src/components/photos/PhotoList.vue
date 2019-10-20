@@ -30,7 +30,7 @@
     data () {
       return {
         cates: [],
-        list: [] //图片列表数组
+        list: []
       };
     },
     created () {
@@ -44,7 +44,6 @@
       });
     },
     methods: {
-      // 获取所有的图片分类
       getAllCategory () {
         this.$http.get("api/getimgcategory").then(result => {
           if (result.body.status === 0) {
@@ -56,7 +55,6 @@
         });
       },
 
-      // 获取图片
       getPhotoListByCateId (cateId) {
         this.$http.get('api/getimages/' + cateId).then(result => {
           if (result.body.status === 0) {
