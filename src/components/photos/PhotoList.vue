@@ -38,7 +38,6 @@
       this.getPhotoListByCateId(0);
     },
     mounted () {
-      // 初始化 mui 滑动控件
       mui('.mui-scroll-wrapper').scroll({
         deceleration: 0.0005
       });
