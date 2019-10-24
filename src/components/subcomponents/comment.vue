@@ -69,7 +69,7 @@
             this.comments.unshift(cmt)
             this.msg = ''
           } else {
-            Toast('评论失败...')
+            Toast('评论失败')
           }
         })
       }

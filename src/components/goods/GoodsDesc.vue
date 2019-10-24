@@ -25,7 +25,7 @@
           if (result.body.status === 0) {
             this.info = result.body.message[0];
           } else {
-            console.log('getdesc失败...')
+            console.log('getdesc失败')
           }
         })
       }
