@@ -34,7 +34,7 @@
           if (result.body.status === 0) {
             this.newsInfo = result.body.message[0];
           } else {
-            Toast('新闻内容获取失败...')
+            Toast('新闻内容获取失败')
             console.log('失败id' + this.id)
           }
         });

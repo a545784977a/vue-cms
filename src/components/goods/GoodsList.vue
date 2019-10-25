@@ -37,7 +37,7 @@
           if (result.body.status === 0) {
             this.goodsList = this.goodsList.concat(result.body.message);
           } else {
-            console.log('商品列表获取失败...')
+            console.log('商品列表获取失败')
           }
         })
       },

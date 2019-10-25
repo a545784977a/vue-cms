@@ -137,7 +137,6 @@
       },
       getSelectedCount (count) {
         this.selectedCount = count;
-        // console.log(this.selectedCount)
       }
     },
     
