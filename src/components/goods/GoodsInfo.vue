@@ -101,7 +101,7 @@
       goComment (id) {
         this.$router.push('/home/goodscomment/' + id);
       },
-      addToShopCar () { // 添加到购物车
+      addToShopCar () {
         this.ballFlag = !this.ballFlag;
 
         var goodsinfo = {
