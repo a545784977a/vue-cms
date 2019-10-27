@@ -120,7 +120,6 @@
       enter (el, done) {
         el.offsetWidth;
 
-        // 获取小球在页面中的位置
         const ballPosition = this.$refs.ball.getBoundingClientRect();
         // 获取徽标在页面中的位置
         const badgePosition = document.getElementById('badge').getBoundingClientRect();
