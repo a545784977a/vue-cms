@@ -36,7 +36,7 @@
           if (result.body.status === 0) {
             this.newsList = result.body.message;
           } else {
-            Toast('获取新闻列表失败...');
+            Toast('获取新闻列表失败');
           }
         });
       }

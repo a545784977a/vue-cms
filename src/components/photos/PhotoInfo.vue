@@ -18,7 +18,6 @@
 <script>
   import { Toast } from 'mint-ui';
 
-  // 导入评论子组件
   import comment from '../subcomponents/comment.vue'
 
   export default {

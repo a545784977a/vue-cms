@@ -15,7 +15,6 @@
           <img v-lazy="item.img_url">
           <div class="info">
             <div class="info-title">{{ item.title }}</div>
-            <!-- <div class="info-body">{{ item.zhaiyao }}</div> -->
           </div>
         </router-link>
       </ul>

@@ -121,7 +121,6 @@
         el.offsetWidth;
 
         const ballPosition = this.$refs.ball.getBoundingClientRect();
-        // 获取徽标在页面中的位置
         const badgePosition = document.getElementById('badge').getBoundingClientRect();
 
         const xDist = badgePosition.left - ballPosition.left;
