@@ -11,7 +11,6 @@
 
   export default {
     mounted () {
-      // 初始化数字选择框
       mui(".mui-numbox").numbox();
     },
 

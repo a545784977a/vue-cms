@@ -65,7 +65,7 @@
         id: this.$route.params.id,
         lunbotu: [],
         goodsInfo: {},
-        ballFlag: false, // 控制小球隐藏和显示的标识符
+        ballFlag: false,
         selectedCount: 1,
       }
     },

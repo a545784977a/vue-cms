@@ -46,7 +46,6 @@
         })
       },
 
-      // 获取缩略图
       getThumbs () {
         this.$http.get('api/getthumimages/' + this.id).then(result => {
           if (result.body.status === 0) {
