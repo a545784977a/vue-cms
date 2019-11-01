@@ -16,7 +16,6 @@
 
     methods: {
       countChanged () {
-        // console.log(this.$refs.numbox.value)
         this.$emit("getcount", parseInt(this.$refs.numbox.value));
       }
     },

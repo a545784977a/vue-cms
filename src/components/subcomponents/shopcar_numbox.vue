@@ -16,7 +16,6 @@
 
     methods: {
       countChanged () {
-        // console.log(this.$refs.numbox.value)
         this.$store.commit("updateGoodsInfo", {
           id: this.goodsId,
           count: this.$refs.numbox.value
