@@ -19,9 +19,7 @@
         this.$emit("getcount", parseInt(this.$refs.numbox.value));
       }
     },
-
     props: ["max"],
-
     watch: {
       max: function (newVal, oldVal) {
         mui(".mui-numbox")

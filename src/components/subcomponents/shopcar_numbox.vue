@@ -13,7 +13,6 @@
     mounted () {
       mui(".mui-numbox").numbox();
     },
-
     methods: {
       countChanged () {
         this.$store.commit("updateGoodsInfo", {
@@ -23,7 +22,6 @@
 
       }
     },
-
     props: ["initcount", "goodsId"]
   }
 </script>
