@@ -48,7 +48,7 @@
             result.body.message.unshift({ title: "全部", id: 0 });
             this.cates = result.body.message;
           } else {
-            Toast('图片获取失败...')
+            Toast('图片获取失败')
           }
         });
       },

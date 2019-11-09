@@ -91,7 +91,7 @@
           if (result.body.status === 0) {
             this.goodsInfo = result.body.message[0];
           } else {
-            console.log('goodsInfo获取失败...')
+            console.log('goodsInfo获取失败')
           }
         })
       },

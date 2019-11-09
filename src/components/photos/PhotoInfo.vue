@@ -41,7 +41,7 @@
           if (result.body.status === 0) {
             this.photoInfo = result.body.message[0];
           } else {
-            Toast('图片信息获取失败...')
+            Toast('图片信息获取失败')
           }
         })
       },
