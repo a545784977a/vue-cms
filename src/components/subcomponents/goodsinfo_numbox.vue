@@ -13,7 +13,6 @@
     mounted () {
       mui(".mui-numbox").numbox();
     },
-
     methods: {
       countChanged () {
         this.$emit("getcount", parseInt(this.$refs.numbox.value));

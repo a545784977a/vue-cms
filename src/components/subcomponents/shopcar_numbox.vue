@@ -19,7 +19,6 @@
           id: this.goodsId,
           count: this.$refs.numbox.value
         })
-
       }
     },
     props: ["initcount", "goodsId"]

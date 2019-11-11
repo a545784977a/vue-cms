@@ -51,7 +51,6 @@
         this.pageIndex++;
         this.getComments();
       },
-
       postComment () {
         if (this.msg.trim().length === 0) {
           return Toast('评论不能为空...')
