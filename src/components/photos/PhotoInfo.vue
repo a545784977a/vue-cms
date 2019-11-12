@@ -58,7 +58,6 @@
           }
         })
       },
-
       handleClose () {
         console.log('close event')
       }

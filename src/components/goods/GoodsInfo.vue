@@ -103,7 +103,6 @@
       },
       addToShopCar () {
         this.ballFlag = !this.ballFlag;
-
         var goodsinfo = {
           id: this.id,
           count: this.selectedCount,
