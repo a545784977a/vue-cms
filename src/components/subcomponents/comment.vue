@@ -73,7 +73,6 @@
         })
       }
     },
-
     props: ["id"]
   }
 </script>
