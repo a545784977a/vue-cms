@@ -109,7 +109,6 @@
           price: this.goodsInfo.sell_price,
           selected: true
         }
-
         this.$store.commit('addToCar', goodsinfo)
 
       },

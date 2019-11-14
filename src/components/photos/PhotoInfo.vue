@@ -45,7 +45,6 @@
           }
         })
       },
-
       getThumbs () {
         this.$http.get('api/getthumimages/' + this.id).then(result => {
           if (result.body.status === 0) {
