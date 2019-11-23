@@ -52,6 +52,7 @@
 					}
 				});
 			},
+			
 			getPhotoListByCateId (cateId) {
 				this.$http.get('api/getimages/' + cateId).then(result => {
 					if (result.body.status === 0) {

@@ -62,7 +62,6 @@
 				console.log('close event')
 			}
 		},
-
 		components: {
 			'cmt-box': comment
 		}
