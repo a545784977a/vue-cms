@@ -10,6 +10,7 @@
 	import mui from '../../lib/mui/js/mui.min.js'
 
 	export default {
+		props: ["initcount", "goodsId"],
 		mounted () {
 			mui(".mui-numbox").numbox();
 		},
@@ -21,7 +22,6 @@
 				})
 			}
 		},
-		props: ["initcount", "goodsId"]
 	}
 </script>
 

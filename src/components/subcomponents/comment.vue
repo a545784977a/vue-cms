@@ -24,6 +24,7 @@
 <script>
 	import { Toast } from 'mint-ui';
 	export default {
+		props: ["id"],
 		data () {
 			return {
 				pageIndex: 1,
@@ -73,7 +74,6 @@
 				})
 			}
 		},
-		props: ["id"]
 	}
 </script>
 

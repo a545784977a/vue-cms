@@ -10,6 +10,14 @@
 	import mui from '../../lib/mui/js/mui.min.js'
 
 	export default {
+		props: ["max"],
+		watch: {
+			max: function (newVal, oldVal) {
+				mui(".mui-numbox")
+					.numbox()
+					.setOption("max", newVal)
+			}
+		},
 		mounted () {
 			mui(".mui-numbox").numbox();
 		},
@@ -18,14 +26,6 @@
 				this.$emit("getcount", parseInt(this.$refs.numbox.value));
 			}
 		},
-		props: ["max"],
-		watch: {
-			max: function (newVal, oldVal) {
-				mui(".mui-numbox")
-					.numbox()
-					.setOption("max", newVal)
-			}
-		}
 	}
 </script>
 
