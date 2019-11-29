@@ -111,7 +111,6 @@
 				}
 				
 				this.$store.commit('addToCar', goodsinfo)
-
 			},
 			beforeEnter (el) {
 				el.style.transform = "translate(0, 0)"

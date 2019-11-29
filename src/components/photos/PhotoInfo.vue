@@ -63,7 +63,7 @@
 			}
 		},
 		components: {
-			'cmt-box': comment
+			'cmt-box': comment;
 		}
 	}
 </script>
