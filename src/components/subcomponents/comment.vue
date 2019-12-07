@@ -32,7 +32,6 @@
 				msg: ''
 			}
 		},
-
 		created () {
 			this.getComments();
 		},
