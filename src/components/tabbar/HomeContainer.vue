@@ -61,7 +61,6 @@
       getImgLunbotu() { // 获取轮播图数据方法
         this.$http.get('api/getlunbo').then(result => {
           if (result.body.status === 0) {
-            // 获取成功
             this.lunbotuList = result.body.message;
           } else {
             // 获取失败

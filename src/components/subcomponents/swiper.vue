@@ -19,7 +19,6 @@
 <style lang="scss" scoped>
   .mint-swipe {
     height: 200px;
-
     .mint-swipe-item {
       text-align: center;
 
