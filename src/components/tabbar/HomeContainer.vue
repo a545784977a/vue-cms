@@ -63,7 +63,6 @@
           if (result.body.status === 0) {
             this.lunbotuList = result.body.message;
           } else {
-            // 获取失败
             Toast('加载轮播图失败...');
           }
         });
