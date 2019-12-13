@@ -90,7 +90,6 @@
 				height: 300px;
 				margin: auto;
 			}
-
 			.info {
 				color: white;
 				text-align: left;

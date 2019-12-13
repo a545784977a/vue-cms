@@ -78,7 +78,6 @@
 			text-align: center;
 			margin: 15px 0;
 		}
-
 		.subtitle {
 			display: flex;
 			justify-content: space-between;
