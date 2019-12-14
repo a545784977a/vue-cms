@@ -83,12 +83,10 @@
 			justify-content: space-between;
 			font-size: 13px;
 		}
-
 		.content {
 			font-size: 13px;
 			line-height: 30px;
 		}
-
 		.my-gallery {
 			img {
 				wight: 100px;
