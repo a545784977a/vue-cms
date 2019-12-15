@@ -71,7 +71,6 @@
 <style lang="scss" scoped>
 	.photoinfo-container {
 		padding: 3px;
-
 		h3 {
 			color: #26A2FF;
 			font-size: 15px;

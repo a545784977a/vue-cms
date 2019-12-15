@@ -135,7 +135,6 @@
 				this.selectedCount = count;
 			}
 		},
-		
 		components: {
 			swiper,
 			numbox
