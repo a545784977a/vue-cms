@@ -15,7 +15,7 @@
 			max: function (newVal, oldVal) {
 				mui(".mui-numbox")
 					.numbox()
-					.setOption("max", newVal)
+					.setOption("max", newVal);
 			}
 		},
 		mounted () {
