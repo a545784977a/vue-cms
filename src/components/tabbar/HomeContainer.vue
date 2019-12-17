@@ -58,7 +58,7 @@
       this.getImgLunbotu();
     },
     methods: {
-      getImgLunbotu() { // 获取轮播图数据方法
+      getImgLunbotu() {
         this.$http.get('api/getlunbo').then(result => {
           if (result.body.status === 0) {
             this.lunbotuList = result.body.message;

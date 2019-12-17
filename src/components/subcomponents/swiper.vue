@@ -14,6 +14,7 @@
   export default {
     props: ["lunbotuList", "isFull"]
   }
+  
 </script>
 
 <style lang="scss" scoped>
