@@ -52,7 +52,7 @@
 			},
 			postComment () {
 				if (this.msg.trim().length === 0) {
-					return Toast('评论不能为空...')
+					return Toast('评论不能为空')
 				}
 
 				this.$http.post('api/postcomment/' + this.$route.params.id, {
