@@ -35,7 +35,6 @@
 		},
 
 		methods: {
-			// 获取图片详情
 			getPhotoInfo () {
 				this.$http.get('api/getimageInfo/' + this.id).then(result => {
 					if (result.body.status === 0) {
