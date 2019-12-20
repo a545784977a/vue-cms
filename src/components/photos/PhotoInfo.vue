@@ -33,7 +33,6 @@
 			this.getPhotoInfo();
 			this.getThumbs();
 		},
-
 		methods: {
 			getPhotoInfo () {
 				this.$http.get('api/getimageInfo/' + this.id).then(result => {
