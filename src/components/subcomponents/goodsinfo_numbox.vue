@@ -11,6 +11,7 @@
 
 	export default {
 		props: ["max"],
+		
 		watch: {
 			max: function (newVal, oldVal) {
 				mui(".mui-numbox")
