@@ -1,12 +1,10 @@
 <template>
   <div>
-
     <mt-swipe :auto="4000">
       <mt-swipe-item v-for="item in lunbotuList" :key="item.id">
         <img :src="item.img" alt="" :class="{'full': isFull}">
       </mt-swipe-item>
     </mt-swipe>
-
   </div>
 </template>
 
