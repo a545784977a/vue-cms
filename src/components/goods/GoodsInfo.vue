@@ -69,6 +69,7 @@
 				selectedCount: 1,
 			}
 		},
+		
 		created () {
 			this.getLunbotu();
 			this.getGoodsInfo();
