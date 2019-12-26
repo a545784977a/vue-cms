@@ -96,7 +96,6 @@
 				bottom: 0;
 				background-color: rgba(0, 0, 0, 0.4);
 				max-height: 80px;
-
 				.info-title {
 					font-size: 14px;
 				}

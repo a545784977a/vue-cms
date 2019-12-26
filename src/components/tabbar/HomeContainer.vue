@@ -76,7 +76,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   .mui-grid-view.mui-grid-9 {
     background-color: #fff;
     border: none;
