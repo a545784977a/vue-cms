@@ -83,7 +83,6 @@
 				width: 100%;
 				vertical-align: middle;
 			}
-
 			img[lazy="loading"] {
 				width: 40px;
 				height: 300px;

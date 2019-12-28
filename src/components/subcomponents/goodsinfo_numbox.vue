@@ -19,6 +19,7 @@
 					.setOption("max", newVal);
 			}
 		},
+		
 		mounted () {
 			mui(".mui-numbox").numbox();
 		},
