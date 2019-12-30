@@ -28,7 +28,6 @@
 				slide1 : []
 			}
 		},
-
 		created () {
 			this.getPhotoInfo();
 			this.getThumbs();
