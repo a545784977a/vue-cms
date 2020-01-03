@@ -88,7 +88,6 @@
       font-size: 13px;
     }
   }
-
   .mui-grid-view.mui-grid-9 .mui-table-view-cell {
     border: 0;
   }
