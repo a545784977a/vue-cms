@@ -68,7 +68,6 @@
         });
       },
     },
-
     components: {
       switer
     }
