@@ -24,7 +24,6 @@
       </div>
     </div>
 
-    <!-- 商品结算区域 -->
     <div class="mui-card">
       <div class="mui-card-content">
         <div class="mui-card-content-inner jiesuan">
