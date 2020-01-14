@@ -36,6 +36,7 @@
 		created () {
 			this.getComments();
 		},
+		
 		methods: {
 			getComments () {
 				this.$http.get("api/getcomments/"+ this.id +"?pageindex=" + this.pageIndex).then(result => {
