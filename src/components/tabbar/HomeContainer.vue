@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- 轮播图组件 -->
     <switer :lunbotuList="lunbotuList" :isFull="true"></switer>
 
     <ul class="mui-table-view mui-grid-view mui-grid-9">
