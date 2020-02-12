@@ -19,7 +19,6 @@
     height: 200px;
     .mint-swipe-item {
       text-align: center;
-
       img {
         height: 100%;
       }
