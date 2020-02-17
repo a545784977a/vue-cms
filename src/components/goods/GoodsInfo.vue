@@ -118,7 +118,6 @@
 
 				const ballPosition = this.$refs.ball.getBoundingClientRect();
 				const badgePosition = document.getElementById('badge').getBoundingClientRect();
-
 				const xDist = badgePosition.left - ballPosition.left;
 				const yDist = badgePosition.top - ballPosition.top;
 
