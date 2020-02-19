@@ -115,7 +115,6 @@
 			},
 			enter (el, done) {
 				el.offsetWidth;
-
 				const ballPosition = this.$refs.ball.getBoundingClientRect();
 				const badgePosition = document.getElementById('badge').getBoundingClientRect();
 				const xDist = badgePosition.left - ballPosition.left;
