@@ -42,8 +42,8 @@
   </div>
 </template>
 <script>
-  import { Toast } from 'mint-ui'
-  import switer from '../subcomponents/swiper.vue'
+  import { Toast } from 'mint-ui';
+  import switer from '../subcomponents/swiper.vue';
   export default {
     data () {
       return {
