@@ -46,7 +46,6 @@
         goodsList: []
       }
     },
-
     created () {
       this.getGoodsList()
     },
