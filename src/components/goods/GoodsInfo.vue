@@ -58,6 +58,7 @@
 <script>
 	import swiper from '../subcomponents/swiper.vue';
 	import numbox from '../subcomponents/goodsinfo_numbox.vue';
+	
 	export default {
 		data () {
 			return {
