@@ -40,6 +40,7 @@
 
 <script>
   import numbox from '../subcomponents/shopcar_numbox.vue';
+  
   export default {
     data () {
       return {
