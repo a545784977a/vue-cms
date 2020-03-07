@@ -30,7 +30,7 @@
 			return {
 				pageIndex: 1,
 				comments: [],
-				msg: ''
+				msg: '666'
 			}
 		},
 		created () {
