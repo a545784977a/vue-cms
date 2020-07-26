@@ -66,7 +66,7 @@
 				lunbotu: [],
 				goodsInfo: {},
 				ballFlag: false,
-				selectedCount: 1,
+				selectedCount: 1
 			}
 		},
 		created () {

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import cmtbox from '../subcomponents/comment.vue'
+  import cmtbox from '../subcomponents/comment.vue';
 
   export default {
     components: {
